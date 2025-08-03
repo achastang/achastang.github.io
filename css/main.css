@@ -363,7 +363,7 @@ html, body {
         height: clamp(70px,44vw,270px);
         border-radius: 20%;
         box-shadow: 0 0 7px rgb(70, 70, 70);
-        bottom:2vh;
+        bottom:-20vh;
         margin-right:6vw;
         z-index: 3;
     }
