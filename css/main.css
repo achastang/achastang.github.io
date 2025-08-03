@@ -352,7 +352,7 @@ html, body {
         border-radius: 15%;
         box-shadow: 0 0 7px rgb(70, 70, 70);
         top:auto;
-        bottom: clamp(180px,2vh,200px);
+        bottom: clamp(120px, 2vh, 140px);
         margin-left: 6vw;
     }
     
@@ -364,7 +364,7 @@ html, body {
         border-radius: 20%;
         box-shadow: 0 0 7px rgb(70, 70, 70);
         top:auto;
-        bottom:13vh;
+        bottom:6vh;
         margin-right:6vw;
         z-index: 3;
     }
