@@ -352,7 +352,7 @@ html, body {
         border-radius: 15%;
         box-shadow: 0 0 7px rgb(70, 70, 70);
         top:auto;
-        bottom: clamp(120px, 2vh, 140px);
+        bottom: clamp(135px, 2vh, 155px);
         margin-left: 6vw;
     }
     
