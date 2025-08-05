@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexis Chastang's Personal Website</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="main.css" />
   <!-- Poppins font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
@@ -30,12 +30,12 @@
   <section id="home">
     <h1 class="titles" id="mainTitle">Hi, I'm Alexis Chastang</h1>
     <div id="mainBio">
-        <p class="para">D1 Student-Athlete at Stonehill College</p>
+        <p class="para">Division 1 Student-Athlete at Stonehill College</p>
         <p class="para" id="eduDetails">Junior Computer Science Major with a Mathematics Minor</p>
     </div>
     <div class="home-section">
         <div id="image1">
-            <img src="webImage.png"/>
+            <img src="images/webImage.png"/>
         </div>
     </div>
     <a href="mailto:alexischastang2@gmail.com" class="emailButton">Get in Touch</a>
@@ -45,17 +45,44 @@
 
   <section id="about">
     <h2 class="titles">About Me</h2>
-    <img src="actionShot.png" id="actionImg"/>
-    <p class="para" id="para1">I’m from Faversham, England, and currently attend Stonehill College in Massachusetts. I’ve been playing tennis for 16 years, and fulfilling my dream of competing at Division 1 level led me to Stonehill. While I’ve always enjoyed math, it wasn’t until my freshman year of college that I discovered a passion for computer science. I’m especially drawn to data science and web development, but I enjoy all forms of problem-solving and am always eager to learn more in the field. </p>
-    <p class="para" id="para2">Outside the classroom, I'm a member of Stonehill’s Student-Athlete Advisory Committee (SAAC). I serve as a spokesperson for my teammates, advocating for their needs and contributing to efforts that enhance the student-athlete experience. To take a more active role, I also manage tournament logistics for charity sports events, such as dodgeball, cornhole, and kickball. I coordinate match lengths, formats, and other details to ensure smooth operations and successful fundraising for the Jay Fund. Additionally, I actively participate in meetings of the Association of Computing Machinery (ACM) on campus. </p>
-    <img src="cornhole.jpeg" id="cornholeImg"/>
-    <img src="arsenal.jpg" id="arsenalImg"/>
-    <p class="para" id="para3">While tennis has always been my main sport, I’m also a huge football (soccer) fan. No matter how busy I am, I always make time to watch Arsenal play, including preseason friendlies.</p>
+    <div class="aboutpara">
+      <p id="para1">I’m from Faversham, England, and currently attend Stonehill College in Massachusetts. I’ve been playing tennis for 16 years, and fulfilling my dream of competing at Division 1 level led me to Stonehill. While I’ve always enjoyed math, it wasn’t until my freshman year of college that I discovered a passion for computer science. I’m especially drawn to data science and web development, but I enjoy all forms of problem-solving and am always eager to learn more in the field. </p>
+      <p id="para2">Outside the classroom, I'm a member of Stonehill’s Student-Athlete Advisory Committee (SAAC). I serve as a spokesperson for my teammates, advocating for their needs and contributing to efforts that enhance the student-athlete experience. To take a more active role, I also manage tournament logistics for charity sports events, such as dodgeball, cornhole, and kickball. I coordinate match lengths, formats, and other details to ensure smooth operations and successful fundraising for the Jay Fund. Additionally, I actively participate in meetings of the Association of Computing Machinery (ACM) on campus. </p>
+      <p id="para3">Alongside my competitive tennis experience, I'm a certified Level 1 tennis coach and an official court supervisor; qualifications I regularly put to use at my home club, Canterbury Tennis Club. While tennis has always been my main sport, I’m also a huge football (soccer) fan. No matter how busy I am, I always make time to watch Arsenal play, including preseason friendlies.</p>
+    </div>
+    <div class="image-group">
+        <img src="images/actionShot.png" id="actionImg"/>
+        <img src="images/cornhole.jpeg" id="cornholeImg"/>
+        <img src="images/arsenal.jpg" id="arsenalImg"/>
+      </div>
+    
   </section>
 
   <section id="work">
     <h2 class="titles">Work Experience</h2>
-    <p>Your experience...</p>
+    <div class="job-grid">
+        <div class="job">
+          <h3>Web Programming Intern</h3>
+          <p class="company">Stonehill College Digital Innovation Lab | August 2025 - Present</p>
+          <p class="description">Redesign and optimize an online platform to showcase student work in various media formats, ensuring scalability and ease of maintenance</p>
+          <p class="description">Collaborate with supervisor weekly to track progress, integrate feedback, and refine project objectives</p>
+        </div>
+        <div class="job">
+          <h3>Teaching Assistant</h3>
+          <p class="company">Stonehill College | September 2024 - Present</p>
+          <p class="description prof">Prof. Jane HyoJin Lee: Calculus 1 | Fall 2024, Statistics for Science | Spring 2025, Data Science | Fall 2025</p>
+          <p class="description prof">Prof. Sam Goree: Data Structures | Fall 2025</p>
+          <p class="description">Assisted students in understanding course material</p>
+          <p class="description">Held review sessions to go through examples and homework questions.</p>  
+        </div>
+        <div class="job">
+          <h3>Padel Research Intern</h3>
+          <p class="company">Canterbury Tennis Club | Summer 2025</p>
+          <p class="description">Collected utilisation data of local clubs regularly, investigated competitor membership options and pricing</p>
+          <p class="description">Created Plotly visualisations to present findings to committee board</p>
+          <p class="description">Attended in-person meetings at other clubs to gather information</p>
+        </div>
+      </div>
   </section>
 
   <section id="projects">
