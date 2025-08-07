@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="main.css" />
   <!-- Poppins font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/YOUR_KIT.js" crossorigin="anonymous"></script>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="background-svg"></div>
@@ -22,7 +22,7 @@
       <a href="#about">About Me</a>
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Socials</a>
+      <a href="#contact">Contacts</a>
     </div>
   </nav>
 
@@ -33,33 +33,26 @@
         <p class="para">Division 1 Student-Athlete at Stonehill College</p>
         <p class="para" id="eduDetails">Junior Computer Science Major with a Mathematics Minor</p>
     </div>
-    <div class="home-section">
-        <div id="image1">
-            <img src="webImage.png"/>
-        </div>
-    </div>
-    <a href="mailto:alexischastang2@gmail.com" class="emailButton">Get in Touch</a>
-    
-    
+    <img src="images/webImage.png" id="image1"/>
   </section>
 
   <section id="about">
-    <h2 class="titles">About Me</h2>
+    <h2 class="titles" id="aboutMe">About Me</h2>
     <div class="aboutpara">
       <p id="para1">I’m from Faversham, England, and currently attend Stonehill College in Massachusetts. I’ve been playing tennis for 16 years, and fulfilling my dream of competing at Division 1 level led me to Stonehill. While I’ve always enjoyed math, it wasn’t until my freshman year of college that I discovered a passion for computer science. I’m especially drawn to data science and web development, but I enjoy all forms of problem-solving and am always eager to learn more in the field. </p>
       <p id="para2">Outside the classroom, I'm a member of Stonehill’s Student-Athlete Advisory Committee (SAAC). I serve as a spokesperson for my teammates, advocating for their needs and contributing to efforts that enhance the student-athlete experience. To take a more active role, I also manage tournament logistics for charity sports events, such as dodgeball, cornhole, and kickball. I coordinate match lengths, formats, and other details to ensure smooth operations and successful fundraising for the Jay Fund. Additionally, I actively participate in meetings of the Association of Computing Machinery (ACM) on campus. </p>
       <p id="para3">Alongside my competitive tennis experience, I'm a certified Level 1 tennis coach and an official court supervisor; qualifications I regularly put to use at my home club, Canterbury Tennis Club. While tennis has always been my main sport, I’m also a huge football (soccer) fan. No matter how busy I am, I always make time to watch Arsenal play, including preseason friendlies.</p>
     </div>
     <div class="image-group">
-        <img src="actionShot.png" id="actionImg"/>
-        <img src="cornhole.jpeg" id="cornholeImg"/>
-        <img src="arsenal.jpg" id="arsenalImg"/>
+        <img src="images/actionShot.png" id="actionImg"/>
+        <img src="images/cornhole.jpeg" id="cornholeImg"/>
+        <img src="images/arsenal.jpg" id="arsenalImg"/>
       </div>
     
   </section>
 
   <section id="work">
-    <h2 class="titles">Work Experience</h2>
+    <h2 class="titles" id="workExperience">Work Experience</h2>
     <div class="job-grid">
         <div class="job">
           <h3>Web Programming Intern</h3>
@@ -79,22 +72,48 @@
           <h3>Padel Research Intern</h3>
           <p class="company">Canterbury Tennis Club | Summer 2025</p>
           <p class="description">Collected utilisation data of local clubs regularly, investigated competitor membership options and pricing</p>
-          <p class="description">Created Plotly visualisations to present findings to committee board</p>
+          <p class="description">Reported results to club manageer and created Plotly visualisations to present findings to executive committee board</p>
           <p class="description">Attended in-person meetings at other clubs to gather information</p>
         </div>
       </div>
   </section>
 
   <section id="projects">
-    <h2 class="titles">Projects</h2>
-    <p>Talk about your projects...</p>
+    <h2 class="titles" id="projectTitle">Projects</h2>
+    <div class="project-grid">
+        <a href="https://github.com/achastang/achastang.github.io" target="_blank" class="project-link">
+            <div class="project" >
+                <h3>Personal Wesbite</h3>
+                <p class="language-date">HTML, CSS, JavaScript | July 2025</p>
+                <p class="description">Employ and experiment with HTML, CSS, and JavaScript to develop website </p>
+                <p class="description">Conduct routine maintenance and update information </p>
+            </div>
+        </a>
+        <a href="https://github.com/achastang/ArcadeMenu" target="_blank" class="project-link">
+            <div class="project">
+                <h3>Retro Arcade Game Machine</h3>
+                <p class="language-date">Java | July 2024</p>
+                <p class="description">Designed and built a fully interactive, retro-style arcade machine in Java, featuring classic games including Snake, Tetris, Pong, and Flappy Bird.</p>
+                <p class="description">Integrated a secure user authentication system and real-time, dynamically updating leaderboards.</p>         
+            </div>
+        </a>
+        <div class="project project-large">
+          <h3>Tennis Sudden Death Deuce Analysis and Machine Learning</h3>
+          <p class="language-date">Python | August 2025</p>
+          <p class="description">Collected information from every deuce game at Australian Open 2025</p>
+          <p class="description">Conducted comparative analysis using Pandas to evaluate general performance differences between sudden death and traditional deuce format supported with visualisations to highlight key trends</p>
+          <p class="description">Developed a machine learning model using Decision Trees and Bayesian inference to predict the outcome of service games based on matchups and player styles</p>
+        </div>
+      </div>
   </section>
 
   <section id="contact">
-    <h3>Check Out My Socials</h2>
+    <h2 class="titles" id="getInTouch">Get in Touch</h2>
     <div class="icons">
-      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/achastang" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/alexis-chastang" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:alexischastang2@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/a.chastang/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
 
