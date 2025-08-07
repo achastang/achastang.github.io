@@ -3,7 +3,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
     color: white;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory; /* enable vertical snap */
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     user-select: none;
     position: relative;
@@ -28,7 +28,7 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     padding: 2em;
-    scroll-snap-align: start; /* snap to the start of each section */
+    scroll-snap-align: start; 
   }
 
   .titles {
@@ -50,7 +50,7 @@ html, body {
 
   .para{
     position: relative;
-    line-height: 1.2; /* Controls gap between lines */
+    line-height: 1.2; 
     z-index: 2;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   }
@@ -66,56 +66,29 @@ html, body {
     position: absolute;
     top: 40vh;
     left: 8vw;
-    font-size: 1.9vw;
+    font-size: 2.6vw;
     max-width: 50vw;
   }
-
-  .home-section {
-    position: relative; /* Allows absolute children to position within this box */
-  }
   
-  div#image1 {
+  #image1 {
     position: absolute;
-    top: -35px;
-    left: 57vw;
+    top: 45%;
+    left: 60vw;
     transform: translateY(-50%);
-    width: 450px;
+    width: 430px;
     height: 700px;
-    border-radius: 10%;      /* makes it circular */
-    overflow: hidden;        /* hides overflow from image corners */
-    box-shadow: 0 0 7px rgba(0,0,0,1); /* optional soft border/shadow */
+    border-radius: 10%; 
+    overflow: hidden;        
+    box-shadow: 0 0 7px rgba(0,0,0,1); 
     z-index: -1;
   }
   
-  div#image1 img {
+  #image1 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;       /* ensures image fills area and crops if needed */
+    object-fit: cover;       
   }
 
-  .emailButton {
-    position: absolute;
-    left: 10vw;
-    top: 550px;
-    font-size: clamp(20px,3vw,32px);
-    background-color:rgba(255, 255, 255, 0.25);
-    padding: 20px 35px;
-    border-radius: 999px;
-    user-select: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0 7px rgba(255, 255, 255, 1);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .emailButton:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-  }
-  
-  /* Navbar */
   .navbar {
     position: fixed;
     top: 0;
@@ -125,31 +98,29 @@ html, body {
   }
   
   .hamburger {
-    background-color: rgba(255, 255, 255, 0.3); /* faded white */
-    border-radius: 999px;       /* big radius for oval shape */
-    padding: 10px 25px;         /* vertical and horizontal padding */
+    background-color: rgb(71, 174, 86); 
+    border-radius: 999px;   
+    padding: 10px 25px;       
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    user-select: none;          /* prevents text selection */
-    backdrop-filter: blur(5px); /* subtle background blur */
-    box-shadow: 0 0 7px rgba(255, 255, 255);
+    user-select: none;
+    box-shadow: 0 0 3px rgb(199, 199, 199);
     transition: background-color 0.3s ease;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   .hamburger:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* brighter on hover */
+    background-color: rgba(98, 195, 111, 1); 
   }
   
-  /* Dropdown menu */
   .dropdown {
     display: none;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(98, 195, 111, 0.9);
     border-radius: 8px;
     margin-top: 10px;
     text-align: right;
@@ -163,14 +134,30 @@ html, body {
   }
   
   .dropdown a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(98, 195, 111, 0.9);
     border-radius: 8px;
+  }
+
+  .dropdown{
+    background-color: rgb(71, 174, 86);
+  }
+
+  .dropdown a{
+    padding:0.3rem 0.4rem;
+    background-color: rgb(71, 174, 86);
+    transition: background 0.1s;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .dropdown a:hover {
+    background-color: rgba(98, 195, 111, 0.9);
   }
 
   h2{
     position: absolute;
     left: 2vw;
-    top: 0px;
+    top: -30px;
     font-size: clamp(14px,2vw,32px);
     text-align: left;
     margin-left: 2vw;
@@ -202,53 +189,20 @@ html, body {
     margin-top: 0;
   }
 
-  /* #actionImg{
-    position: absolute;
-    align-self: flex-start;
-    width: clamp(200px,28vw,330px);
-    height: clamp(100px,19vw,220px);
-    border-radius: 15%;
-    box-shadow: 0 0 7px rgb(70, 70, 70);
-    top:17vh;
-    margin-left:3vw;
-  }
-
-  #cornholeImg{
-    position: absolute;
-    align-self: flex-end;
-    width: clamp(170px,20vw,250px);
-    height: clamp(200px,22vw,270px);
-    border-radius: 20%;
-    box-shadow: 0 0 7px rgb(70, 70, 70);
-    top:42vh;
-    margin-right:3vw;
-  }
-
-  #arsenalImg{
-    position: absolute;
-    align-self: flex-start;
-    width: clamp(200px,28vw,330px);
-    height: clamp(150px,19vw,210px);
-    border-radius: 15%;
-    box-shadow: 0 0 7px rgb(70, 70, 70);
-    bottom: 9vh;
-    margin-left:3vw;
-  } */
-
   .image-group {
-    display: flex;              /* lays them side by side */
-    border: 2px solid #ccc;     /* the rectangle border */
+    display: flex;             
+    border: 2px solid #ccc;   
     padding: 0.3rem;
-    border-radius: 10px;        /* optional: rounded corners */
-    gap: 2px;                  /* space between images */
-    background-color: #f9f9f9;  /* optional: background inside rectangle */
-    width: fit-content;         /* shrinks to fit images */
+    border-radius: 10px;    
+    gap: 2px;                 
+    background-color: #f9f9f9;  
+    width: fit-content;       
     margin-top: 0.8vw;
   }
   
   .image-group img {
-    height: clamp(90px,15vw,240px);              /* or whatever fits your layout */
-    border-radius: 8px;         /* optional: round each image */
+    height: clamp(90px,15vw,240px);          
+    border-radius: 8px;         
   }
 
   #work {
@@ -257,7 +211,6 @@ html, body {
   
   #work h2 {
     text-align: center;
-    margin-bottom: 1rem;
   }
   
   .job-grid {
@@ -304,11 +257,114 @@ html, body {
     font-size: clamp(0.7rem, 1.8vw, 1.2rem);
   }
 
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 0.5rem;
+    font-size: clamp(1rem, 3vw, 2rem);
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    margin-top: 40px;
+  }
+
+  .project-grid a {
+    display: block;
+    height: 100%;
+    text-decoration: none; 
+    color: inherit;       
+  }
+  
+  .project {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-large{
+    grid-column: span 2;
+  }
+  
+  .project:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  .project h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #000;
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
+  
+  .project .language-date {
+    font-weight: bold;
+    color: #555;
+    margin: 0.5rem 0;
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  }
+  
+  .project .description {
+    color: #333;
+    font-size: clamp(0.7rem, 1.8vw, 1.2rem);
+  }
+
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
   .prof{
     margin:0;
     font-weight: bold;
   }
+
+  #contact{
+    height:60vh;
+  }
+
+  #socialMessage{
+    position: absolute;
+    left: 2vw;
+    top: clamp(50px,10vw,100px);
+    font-size: clamp(14px,2vw,32px);
+    text-align: left;
+    margin-left: 2vw;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+    justify-items: center;
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
   
+  .icons a {
+    color: white;
+    font-size: 6rem;     
+    text-decoration: none;
+  }
+  
+  .icons a:visited,
+  .icons a:active,
+  .icons a:hover {
+    color: white; 
+  }
+
+  #getInTouch{
+    top:8vh;
+  }
+
+  #workExperience{
+    top:2vh;
+  }
   
   @media (max-width: 1024px) {
     .home-section {
@@ -337,7 +393,7 @@ html, body {
         font-size: 4vw;
     }
     
-    div#image1 {
+    #image1 {
         width: 350px;
         height: 550px;
     }
@@ -347,6 +403,10 @@ html, body {
         padding: 20px 35px;
         left:10vw;
         font-size: 3vw;
+    }
+
+    #projectTitle{
+      top:3vh;
     }
 }
 
@@ -379,9 +439,11 @@ html, body {
       .job:hover {
         transform: translateX(10px);
     }
-
-    .home-section{
-        position: relative;
+    
+    #work h2 {
+        text-align: center;
+        margin-top: 0;
+    
     }
 
     h1#mainTitle {
@@ -397,22 +459,22 @@ html, body {
         top: 22vw;
         left: 8vw;
         text-align: left;
-        max-width: 90svw;
+        max-width: 90vw;
         margin-bottom: 1.2em;
     }
-    
-    div#image1 {
-        position: relative;
-        top: 40%;                  /* vertical position */
-        left: 44vw;                  /* center of the screen */
-        transform: translate(-50%, -25%); /* shift left by half its own width */
-        width: clamp(250px,2vw,350px);
-        height: clamp(400px,3vw,550px);
+
+    #home img {
+        position: absolute;
+        left: 50%;
+        top: 255px;
+        transform: translateX(-50%);
+        height: clamp(480px, 50vw, 550px);
+        width: clamp(300px, 30vw, 350px);
     }
     
-    .emailButton {             /* stays centred, fixed gap below image */
+    .emailButton {    
         position: absolute;
-        top: 680px;           /* or whatever gap you want */
+        top: 680px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 3.5vw;
@@ -445,54 +507,36 @@ html, body {
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Optional */
+        align-items: center;
         justify-content: flex-start;
     }
 
-    /* #para1, #para2, #para3 {
-        position: relative !important;
-        width: 88vw !important;
-        font-size: clamp(14px,2.3vw,18px) !important;
-        text-align: left !important;
-        align-self: center !important;
-        padding: 0.5rem !important;
-        margin: 0.3vh;
-        top:30px;
-    } */
+    .project-grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: none;
+      gap: 0.5rem;
+      font-size: clamp(1rem, 3vw, 2rem);
+      box-sizing: border-box;
+      width: 100%;
+      height: 80%;
+      margin-top: 40px;
+    }
 
-    /* #actionImg{
-        position: absolute;
-        align-self: flex-start;
-        width: clamp(90px,45vw,230px);
-        height: clamp(50px,26vw,130px);
-        border-radius: 15%;
-        box-shadow: 0 0 7px rgb(70, 70, 70);
-        top:auto;
-        bottom: clamp(160px,2vh,180px);
-        margin-left: 6vw;
+    .project-large{
+      grid-column: span 1;
     }
-    
-      #cornholeImg{
-        position: absolute;
-        align-self: flex-end;
-        width: clamp(50px,40vw,200px);
-        height: clamp(70px,44vw,230px);
-        border-radius: 20%;
-        box-shadow: 0 0 7px rgb(70, 70, 70);
-        top: auto;
-        bottom:6vh;
-        margin-right:6vw;
-        z-index: 3;
+
+    .icons{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
     }
-    
-      #arsenalImg{
-        position: absolute;
-        align-self: flex-start;
-        width: clamp(90px,45vw,230px);
-        height: clamp(50px,26vw,130px);
-        border-radius: 15%;
-        box-shadow: 0 0 7px rgb(70, 70, 70);
-        bottom: 3vh;
-        margin-left:6vw;
-    } */
+
+    .icons a{
+      font-size: 4rem;
+    }
+
+    #workExperience{
+      top:-1.5vh;
+    }
 }
