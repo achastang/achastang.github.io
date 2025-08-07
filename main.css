@@ -528,8 +528,10 @@ html, body {
     }
 
     .icons{
+      position: relative;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+      top:8vh;
     }
 
     .icons a{
@@ -538,5 +540,13 @@ html, body {
 
     #workExperience{
       top:-1.5vh;
+    }
+
+    #projectTitle{
+      top:2vh;  
+    }
+
+    #getInTouch{
+      top:14vh;
     }
 }
