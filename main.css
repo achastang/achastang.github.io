@@ -531,7 +531,7 @@ html, body {
       position: relative;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
-      top:8vh;
+      top:12vh;
     }
 
     .icons a{
@@ -543,10 +543,10 @@ html, body {
     }
 
     #projectTitle{
-      top:2vh;  
+      top:7vh;  
     }
 
     #getInTouch{
-      top:14vh;
+      top:20vh;
     }
 }
